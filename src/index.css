@@ -20,14 +20,31 @@ a {
 /* The End of css reset */
 
 .main {
-    padding: 27px;
+    width: auto;
+    padding: 0px 27px 27px 27px;
     position: relative;
+    text-align: center;
+    background-color: #F7FFF7;
+}
+
+input[name$="prev"] {
+    margin-right: 42px;
+}
+
+.control-button {
+    position: relative;
+    top: -40px;
+}
+
+.control-button input {
+    width: 70px;
+
 }
 
 
 .ipa-topic {
     font-size: 100px;
-    text-align: center;
+    
     position: relative;
     top: -33px;
 }
@@ -35,11 +52,39 @@ a {
 
 .flex-parent {
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
-
 
 .words, .words-ipa {
     padding: 4%;
+}
+
+
+.ipa_vs {
+    margin-top: 20px;
+}
+
+
+
+/* animation */
+
+.topic-enter {
+    transform: translateX(120%);
+    transition: .25s;
+    top: 0;
+}
+.topic-enter-active {
+    transform: translateX(0%);
+}
+
+.topic-exit {
+    transform: translateX(0%);
+    transition: .25s;
+    position: absolute;
+    top: 0;
+}
+.topic-exit-active {
+    transform: translateX(-240%);
 }

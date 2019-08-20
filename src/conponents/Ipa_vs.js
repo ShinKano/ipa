@@ -1,6 +1,6 @@
 import React, { useState, useEffect }from 'react';
 
-const WordsWith =(props)=> {
+const Ipa_vs =(props)=> {
     // console.log(Object.keys(props.wordsWith));
 
     const words = [];
@@ -9,8 +9,8 @@ const WordsWith =(props)=> {
     }
 
     return (
-        <div className="words-with">
-            <h3 className="words-with-title">Words with {props.currentTopic}</h3>
+        <div className="ipa_vs">
+            <h3 className="ipa_vs-title">{props.currentTopic} vs Similer IPAs</h3>
             <div className="flex-parent">
                 <ul className="words">
                     {words.map(key => <li key={key}>{key}</li>) }
@@ -23,4 +23,4 @@ const WordsWith =(props)=> {
     );
 };
 
-export default WordsWith;
+export default Ipa_vs;
